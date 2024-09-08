@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+main{
+    padding:1rem 4rem;
+    width:100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-img{
+    flex:1;
+    objectFit:contain;
+    aspect-ratio:1;
+    height:auto;
+    max-width:700px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .form-container{
+    flex:1;
+} */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin:1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+label{
+    font-size:14px;
+}
+h2{
+    font-size:32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,textarea{
+    padding:0.8rem;
+    margin-top:10px;
+    background:#000;
+    border:1px solid #734949;
+    outline:none;
+    color:#fff;
+    font-size:16px;
+    border-radius:12px;
+    width:100%;
+}
+
+input[type='submit']{
+    width:100%;
+    transition:0.5s all ease-in-out;
+}
+
+input[type='submit']:hover{
+    background:#131212;
+    cursor:pointer;
+}
+
+.cars-container{
+    display:flex;
+    margin-top:2rem;
+}
+
+.check-icon{
+    position:absolute;
 }
